@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="BEASTY — Dark cinematic anime, videos and creator content.">
+  <title>BEASTY | Enter the Darkness</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #080808;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 20px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #292929;
+    }
+    .logo {
+      color: #ff3030;
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 16px;
+      font-size: 13px;
+    }
+    .hero {
+      min-height: 75vh;
+      padding: 90px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background:
+        radial-gradient(ellipse at 80% 40%, #541010 0%, transparent 45%),
+        linear-gradient(120deg, #080808, #171010 65%, #080808);
+    }
+    .tag {
+      color: #ff4545;
+      letter-spacing: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: clamp(54px, 12vw, 100px);
+      line-height: .95;
+      margin: 20px 0;
+      letter-spacing: -4px;
+    }
+    h1 span { color: #ff3030; }
+    .intro {
+      color: #bbb;
+      line-height: 1.8;
+      max-width: 480px;
+    }
+    .button {
+      display: inline-block;
+      margin: 18px 10px 0 0;
+      padding: 14px 20px;
+      background: #e52929;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 3px;
+    }
+    .button.secondary {
+      background: transparent;
+      border: 1px solid #555;
+    }
+    section.content { padding: 55px 8%; }
+    h2 { font-size: 28px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #141414;
+      border: 1px solid #303030;
+      padding: 24px;
+      min-height: 145px;
+    }
+    .card p { color: #aaa; line-height: 1.6; }
+    footer {
+      padding: 30px 8%;
+      color: #777;
+      border-top: 1px solid #292929;
+      font-size: 13px;
+    }
+    @media (max-width: 480px) {
+      header { padding: 18px 5%; }
+      nav a { margin-left: 8px; font-size: 11px; }
+      .hero { padding: 65px 6%; }
+      h1 { letter-spacing: -2px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">BEASTY.</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#content">Content</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="tag">NO FEAR. NO LIMITS.</div>
+      <h1>BUILT IN<br><span>DARKNESS.</span></h1>
+      <p class="intro">
+        Enter the world of BEASTY.
+        Anime energy, cinematic visuals and ruthless motivation.
+        This is where creators leave their mark.
+      </p>
+      <div>
+        <a class="button" href="#content">EXPLORE CONTENT</a>
+        <a class="button secondary" href="#about">MY WORLD</a>
+      </div>
+    </section>
+
+    <section class="content" id="content">
+      <div class="tag">THE COLLECTION</div>
+      <h2>ENTER MY WORLD</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>ANIME</h3>
+          <p>Epic edits, powerful characters and unforgettable moments.</p>
+        </article>
+        <article class="card">
+          <h3>MOTIVATION</h3>
+          <p>Discipline, ambition and the mindset to keep moving.</p>
+        </article>
+        <article class="card">
+          <h3>VIDEOS</h3>
+          <p>Cinematic creations made to capture attention.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content" id="about">
+      <div class="tag">THE CREATOR</div>
+      <h2>THIS IS BEASTY.</h2>
+      <p class="intro">
+        A creative universe built around anime, video and ambition.
+        The journey starts here.
+      </p>
+      <!-- https://www.facebook.com/profile.php?id=61561233878169. -->
+    </section>
+  </main>
+
+  <footer>© 2026 BEASTY. Built for the fearless.</footer>
+</body>
+</html>
