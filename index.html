@@ -129,6 +129,22 @@
       letter-spacing: 2px;
     }
 
+.anime-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.anime-gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border: 1px solid #3a2020;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.12);
+  }
+    
   </style>
 </head>
 <body>
@@ -196,6 +212,14 @@
   <div class="tag">01 / THE SHADOW REALM</div>
   <h2>ANIME</h2>
  <p>Epic characters. Unmatched power. Legendary moments.</p>
+
+<div class="anime-gallery">
+  <img src="images/IMG-20261029-WA7810.jpg"
+       alt="Dark anime artwork">
+
+  <img src="images/file_000000005efc82109df65227073a573b.png"
+       alt="BEASTY cinematic anime artwork">
+</div>
 
 <div class="anime-feature">
   <h3>01 — SOLO LEVELING</h3>
