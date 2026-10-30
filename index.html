@@ -159,6 +159,38 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(255, 0, 0, 0.12);
   } 
+    .video-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  margin: 24px 0;
+}
+
+.video-card {
+  background: #101010;
+  border: 1px solid #3a2020;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.10);
+}
+
+.video-card video {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 4px;
+}
+
+.video-card h3 {
+  color: #fff;
+  margin: 14px 0 6px;
+}
+
+.video-card p {
+  color: #aaa;
+  margin: 0;
+  }
   </style>
 </head>
 <body>
@@ -269,12 +301,44 @@
   </div>
 </section>
 
+
 <section class="content" id="videos">
   <div class="tag">03 / THE CINEMA</div>
-  <h2>VIDEOS</h2>
-  <p>Every frame tells a story.</p>
-  <p>My cinematic videos are coming soon.</p>
-</section>  
+  <h2>BEASTY CINEMA</h2>
+  <p>Every frame tells a story. Every second leaves a mark.</p>
+
+  <div class="video-gallery">
+
+    <div class="video-card">
+      <video controls playsinline preload="metadata">
+        <source src="videos/video-01.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+      <h3>01 — THE AWAKENING</h3>
+      <p>Power begins in silence.</p>
+    </div>
+
+    <div class="video-card">
+      <video controls playsinline preload="metadata">
+        <source src="videos/video-02.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+      <h3>02 — NO MERCY</h3>
+      <p>Built through struggle.</p>
+    </div>
+
+    <div class="video-card">
+      <video controls playsinline preload="metadata">
+        <source src="videos/video-03.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+      <h3>03 — SHADOWS RISE</h3>
+      <p>The darkness creates legends.</p>
+    </div>
+
+  </div>
+</section>
+    
 
 </main>
 
